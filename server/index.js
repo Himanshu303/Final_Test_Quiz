@@ -29,7 +29,13 @@ mongoose
   })
   .then(() => console.log("Database connected successfully ✅"));
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://https://final-test-quiz-frontend.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true
+  }
+));
 app.use(express.json());
 if (process.env.NODE_ENV === "development") {
   morgan("dev");
