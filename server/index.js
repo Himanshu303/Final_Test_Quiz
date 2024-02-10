@@ -36,7 +36,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // routes
-app.use("/api/", (req, res)=> res.send("Hello"));
+app.use("/", (req, res)=> res.send("Hello"));
 app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/question", questionRoutes);
 app.use("/api/quiz", quizRoutes);
