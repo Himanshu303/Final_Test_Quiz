@@ -43,7 +43,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // routes
-app.use("/", (req, res)=> { res.json("Hello") });
+app.get("/", (req, res)=> { res.json("Hello") });
 app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/question", questionRoutes);
 app.use("/api/quiz", quizRoutes);
