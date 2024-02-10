@@ -32,7 +32,7 @@ mongoose
 
 app.use(cors(
   {
-    origin: ["https://https://final-test-quiz-frontend.vercel.app"],
+    origin: ["https://final-test-quiz-frontend.vercel.app"],
     methods:["POST","GET"],
     credentials:true
   }
